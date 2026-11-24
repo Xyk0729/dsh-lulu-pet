@@ -1,0 +1,56 @@
+{
+  "name": "dsh-lulu-pet",
+  "version": "0.1.0",
+  "description": "水豚噜噜：住在 DSH 界面右下角的透明桌面宠物，会待机小动作、点击回应、被拖来拖去，还会冒表情包。",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "pet",
+    "capybara",
+    "lulu",
+    "desktop-pet",
+    "overlay"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg",
+    "assets",
+    "README.md",
+    "LICENSE",
+    "PUBLISH.md"
+  ],
+  "engines": {
+    "node": ">=22.12",
+    "dsh": ">=0.2.1"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-connection"
+      ]
+    }
+  },
+  "icon": "icon.svg",
+  "homepage": "https://github.com/xyk0729/dsh-lulu-pet",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xyk0729/dsh-lulu-pet.git"
+  }
+}

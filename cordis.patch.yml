@@ -1,0 +1,7 @@
+# Loader patch: one Host row for the pet plugin.
+# The entry id must stay globally unique and equal the package name; the plugin market
+# preflight reads the entry id from this line.
+- insert:
+    - id: dsh-lulu-pet
+      name: dsh-lulu-pet
+      config: {}
