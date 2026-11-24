@@ -16,11 +16,25 @@
 
 ## 安装
 
+从插件市场（收录后）：
+
+```bash
+dsh plugin add dsh-lulu-pet
+```
+
+直接从 GitHub 安装：
+
+```bash
+dsh plugin add https://github.com/Xyk0729/dsh-lulu-pet
+```
+
+从本地目录安装（开发时）：
+
 ```bash
 dsh plugin install /path/to/dsh-lulu-pet
 ```
 
-或在 Harness 插件管理里安装本地目录；装好后重启 DSH（或新开会话）。
+或在 Harness 插件管理里选择本地目录；装好后重启 DSH（或新开会话）。
 
 ## 设置
 
