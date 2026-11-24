@@ -2,6 +2,8 @@
 
 在 DeepSeek Harness 里养一只「水豚噜噜」：头顶小橘子、背斜挎包的暖黄色小水豚。
 
+![噜噜在 Harness 窗口里](docs/screenshot.png)
+
 完全独立的插件——不依赖 dsh-pet，不启动 Electron，只往 Harness 页面里挂一层透明浮层，素材（15 段透明 WebM 动作 + 27 张表情）随包分发。
 
 ## 功能
